@@ -17,12 +17,34 @@ Build a full stack app that is functionally similar to this: https://timestamp-m
 Requirements:
 - NodeJS
 - NPM
+- Docker (optional)
 
-Run locally:
+Run using NPM:
 ```bash
 # install dependencies
 npm install
 
 # run app at localhost:3000
 npm start
+```
+
+Run using Docker:
+```bash
+# build image
+docker build -t pbgnz/timestamp-microservice .
+
+# run image
+docker run -p 49160:3000 -d pbgnz/timestamp-microservice
+```
+
+Usage
+```bash
+# natural language date request
+http://localhost:3000/December 15, 2015
+
+# unix date request
+http://localhost:3000/1450137600
+
+# expected response
+{ "unix": 1450137600, "natural": "December 15, 2015" }
 ```

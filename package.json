@@ -1,0 +1,23 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "a timestamp microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escobot/timestamp-microservice.git"
+  },
+  "author": "pbgnz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/escobot/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/escobot/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

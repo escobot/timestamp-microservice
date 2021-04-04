@@ -40,7 +40,7 @@ docker run -p 49160:3000 -d pbgnz/timestamp-microservice
 Usage
 ```bash
 # natural language date request
-http://localhost:3000/December 15, 2015
+http://localhost:3000/Dec 14, 2015
 
 # unix date request
 http://localhost:3000/1450137600

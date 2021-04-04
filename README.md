@@ -34,7 +34,7 @@ Run using Docker:
 docker build -t pbgnz/timestamp-microservice .
 
 # run image
-docker run -p 49160:3000 -d pbgnz/timestamp-microservice
+docker run -p 3000:3000 -d pbgnz/timestamp-microservice
 ```
 
 Usage

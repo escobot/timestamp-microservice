@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const port = process.env.PORT || 8000;
 
 app.get('/', (req, res) => {
   res.status(200).sendFile(path.join(__dirname + '/index.html'));
@@ -33,5 +34,5 @@ app.get('/*', function (req, res) {
   res.send({unix, natural});
 })
 
-app.listen(3000);
-console.log('App running on http://localhost:3000');
+app.listen(port);
+console.log('App running on http://localhost:' + port);
